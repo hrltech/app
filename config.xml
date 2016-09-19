@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		id        = "com.wordpress2app.webapp"
+		versionCode="2"
+		version   = "2.6.7">
+		<name>Webapp Builder</name>
+		<description>Turn your wordpress to app</description>
+		<author href="http://wordpress2app.com/" email="wp2android.xyz@gmail.com">Webapp Builder</author>
+		<preference name="phonegap-version" value="cli-5.2.0" />
+		<preference name="orientation" value="portrait" />
+		<preference name="fullscreen" value="true" />
+		<preference name="target-device" value="universal" />
+		<preference name="webviewbounce" value="true" />
+		<preference name="prerendered-icon" value="true" />
+		<preference name="stay-in-webview" value="true" />
+		<preference name="ios-statusbarstyle" value="default" />
+		<preference name="detect-data-types" value="true" />
+		<preference name="exit-on-suspend" value="false" />
+		<preference name="show-splash-screen-spinner" value="false" />
+		<preference name="auto-hide-splash-screen" value="true" />
+		<preference name="EnableViewportScale" value="true" />
+		<preference name="MediaPlaybackRequiresUserAction" value="false" />
+		<preference name="AllowInlineMediaPlayback" value="false" />
+		<preference name="BackupWebStorage" value="cloud" />
+		<preference name="TopActivityIndicator" value="gray" />
+		<preference name="KeyboardDisplayRequiresUserAction" value="false" />
+		<preference name="HideKeyboardFormAccessoryBar" value="false" />
+		<preference name="SuppressesIncrementalRendering" value="false" />
+		<preference name="android-minSdkVersion" value="14" />
+		<preference name="android-maxSdkVersion" value="23" />
+		<preference name="android-build-tool" value="gradle" />
+		<plugin name="cordova-plugin-whitelist" />
+		<preference name="android-installLocation" value="auto" />
+		<preference name="SplashScreenDelay" value="3000" />
+		<preference name="ErrorUrl" value=""/>
+		<preference name="BackgroundColor" value="0x000000"/>
+		<preference name="KeepRunning" value="true"/>
+		<preference name="DisallowOverscroll" value="false"/>
+		<preference name="LoadingDialog" value=","/> 
+		<preference name="LoadUrlTimeoutValue" value="20000" />
+		<preference name="disable-cursor" value="false" />		
+		<feature name="http://api.phonegap.com/1.0/network"/>
+		<gap:plugin name="org.apache.cordova.inappbrowser"  />
+		<gap:plugin name="org.apache.cordova.network-information"  />
+		<gap:plugin name="org.apache.cordova.splashscreen"  />		
+		<platform name="winphone" />
+		<icon gap:platform="winphone" src="www/res/icon/windows-phone/icon-48.png" />
+		<icon gap:platform="winphone" gap:role="background" src="www/res/icon/windows-phone/icon-173-tile.png" />
+		<gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
+		<icon gap:platform="ios" height="57" src="www/res/icon/ios/icon-57.png" width="57" />
+		<icon gap:platform="ios" height="72" src="www/res/icon/ios/icon-72.png" width="72" />
+		<icon gap:platform="ios" height="114" src="www/res/icon/ios/icon-57-2x.png" width="114" />
+		<icon gap:platform="ios" height="144" src="www/res/icon/ios/icon-72-2x.png" width="144" />
+		<gap:splash gap:platform="ios" height="480" src="www/res/screen/ios/screen-iphone-portrait.png" width="320" />
+		<gap:splash gap:platform="ios" height="960" src="www/res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
+		<gap:splash gap:platform="ios" height="1136" src="www/res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
+		<gap:splash gap:platform="ios" height="1024" src="www/res/screen/ios/screen-ipad-portrait.png" width="768" />
+		<gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
+		<icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+		<icon src="res/icon/android/icon-192-xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
+		<icon src="res/icon/android/icon-144-xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
+		<gap:splash src="res/screen/android/screen-ldpi-portrait.jpg" gap:platform="android" gap:density="ldpi" />
+		<gap:splash src="res/screen/android/screen-mdpi-portrait.jpg" gap:platform="android" gap:density="mdpi" />
+		<gap:splash src="res/screen/android/screen-hdpi-portrait.jpg" gap:platform="android" gap:density="hdpi" />
+		<gap:splash src="res/screen/android/screen-xhdpi-portrait.jpg" gap:platform="android" gap:density="xhdpi" />
+		<access origin="*"/>
+		<platform name="android">
+		<allow-intent href="market:*"/>
+		</platform>
+		<platform name="ios">
+		<allow-intent href="itms:*"/>
+		<allow-intent href="itms-apps:*"/>
+		</platform>
+	</widget>
